@@ -21,7 +21,7 @@ const config = {
     hot: true,
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.scss'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.scss', '.css'],
   },
   stats: {
     children: true
@@ -44,7 +44,7 @@ const config = {
       },
       {
         test: /(\.css|\.scss)$/,
-        use: ['style-loader', 'css-loader'],
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
         test: /\.(png|jpe?g|gif)$/i,

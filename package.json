@@ -25,12 +25,16 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "^2.1.8",
+    "sass": "^1.77.8",
+    "sass-loader": "^16.0.0",
+    "style-loader": "^4.0.0",
     "ts-node": "^10.9.2",
     "webpack": "^5.93.0",
     "webpack-dev-server": "^5.0.4"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
+    "css-loader": "^7.1.2",
     "webpack-cli": "^5.1.4"
   }
 }
