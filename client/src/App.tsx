@@ -1,14 +1,13 @@
 import React from 'react';
-import Header from './Header';
-import Profile from './Profile';
+import Header from './components/Header';
+import PageOne from './components/PageOne';
 
 const App = () => {
 
   return (
     <div>
       <Header />
-      <Profile />
-      Home
+      <PageOne />
     </div>
   )
 }

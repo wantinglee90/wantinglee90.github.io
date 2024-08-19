@@ -8,5 +8,5 @@
     "typeRoots": ["./node_modules/@types"],
     "types": ["node"],
   },
-  "include": ["src", "client"]
+  "include": ["src/**/*", "client/**/*", "custom.d.ts"]
 }
