@@ -2,7 +2,7 @@ import React from 'react';
 import '../assets/styles/LandingPage.css';
 import profile from '../assets/images/profile.jpg';
 
-const Header = () => {
+const Header: React.FC = () => {
 
   return (
     <div className="header-container">

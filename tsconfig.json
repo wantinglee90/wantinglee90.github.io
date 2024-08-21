@@ -5,8 +5,9 @@
     "resolveJsonModule": true,
     "jsx": "react",
     "moduleResolution": "node",
-    "typeRoots": ["./node_modules/@types"],
+    "typeRoots": ["./node_modules/@types", "./src/types"],
     "types": ["node"],
   },
-  "include": ["src/**/*", "client/**/*", "custom.d.ts"]
+  "include": ["client/**/*"],
+  "exclude": ["build"]
 }
