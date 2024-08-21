@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from './components/Header';
-import PageOne from './components/PageOne';
+import LandingPage from './pages/LandingPage';
 
 const App = () => {
 
   return (
     <div>
       <Header />
-      <PageOne />
+      <LandingPage />
     </div>
   )
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import '../assets/styles/LandingPage.css';
 import PageOneBG from '../assets/images/PageOneBG.jpg';
 
-const PageOne = () => {
+const LandingBanner = () => {
 
   return (
     <div className="container">
@@ -18,4 +18,4 @@ const PageOne = () => {
   )
 }
 
-export default PageOne;
+export default LandingBanner;
