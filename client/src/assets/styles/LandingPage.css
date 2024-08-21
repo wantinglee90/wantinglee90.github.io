@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
   --bg-color: #2a2f4a;
@@ -6,7 +7,7 @@
 
 body {
   margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: white;
 }
 
@@ -108,7 +109,7 @@ body {
 
 .section1-leftcontainer {
   position: relative;
-  width: 864px;
+  flex-basis: 864px;
   max-width: 100%;
   max-height: 450px;
   height: 100vh;
@@ -121,17 +122,39 @@ body {
   object-fit: cover;
 }
 
-.section1-1-overlay {
+@media (max-width: 1440px) {
+  .section1-leftcontainer,
+  .section1-rightcontainer {
+    width: 50%; /* Adjust to 50% for smaller viewports */
+  }
+}
+
+.section1-1-overlay, .section1-2-overlay, .section2-1-overlay, .section2-2-overlay {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #6FC3DF;
   opacity: 0.85;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 48px;
   z-index: 2;
+}
+
+.section1-1-overlay {
+  background-color: #6FC3DF;
+}
+
+.section1-2-overlay {
+  background-color: #8D82C4;
+}
+
+.section2-1-overlay {
+  background-color: #EC8D81;
+}
+
+.section2-2-overlay {
+  background-color: #E7B788;
 }
 
 .section-text-container {
@@ -154,6 +177,7 @@ body {
   letter-spacing: 0.25em;
   margin: 0 0 2em 0;
   text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .section1-rightcontainer {
