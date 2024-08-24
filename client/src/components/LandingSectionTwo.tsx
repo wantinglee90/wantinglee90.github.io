@@ -1,29 +1,28 @@
 import React from 'react';
 import '../assets/styles/LandingPage.css';
-import SectionTwoPic1 from '../assets/images/SectionTwoPic1.jpg';
-import SectionTwoPic2 from '../assets/images/SectionTwoPic2.jpg';
+import { LandingPageProps } from '../types/LandingPage.types';
 
-const LandingSectionTwo = () => {
+const LandingSectionTwo: React.FC<LandingPageProps> = ({leftImage, rightImage, leftOverlayColor, rightOverlayColor, leftTitle, rightTitle, leftSubtext, rightSubtext}) => {
 
   return (
     <div className="section-container">
       <div className="section1-rightcontainer">
-        <img src={SectionTwoPic1} className="background" />
-        <div className="section2-1-overlay">
+        <img src={leftImage} className="background" />
+        <div className="section2-1-overlay" style ={{backgroundColor: leftOverlayColor}}>
           <div className='section-text-container'>
-            <div className="section-title"> XXXX </div>
+            <div className="section-title"> {leftTitle} </div>
             <div className="line" />
-            <div className="section-subtext"> XXXXX </div>
+            <div className="section-subtext"> {leftSubtext}  </div>
           </div>
         </div>
       </div> 
       <div className="section1-leftcontainer">
-        <img src={SectionTwoPic2} className="background" />
-        <div className="section2-2-overlay">
+        <img src={rightImage} className="background" />
+        <div className="section2-2-overlay" style ={{backgroundColor: rightOverlayColor}}>
           <div className='section-text-container'>
-            <div className="section-title"> XXXXXX </div>
+            <div className="section-title"> {rightTitle}  </div>
             <div className="line" />
-            <div className="section-subtext"> XXXXXX </div>
+            <div className="section-subtext"> {rightSubtext} </div>
           </div>
         </div>
       </div> 

@@ -1,8 +1,6 @@
 import React from 'react';
 import { LandingPageProps } from '../types/LandingPage.types';
 import '../assets/styles/LandingPage.css';
-import SectionOnePic1 from '../assets/images/SectionOnePic1.jpg';
-import SectionOnePic2 from '../assets/images/SectionOnePic2.jpg';
 
 const LandingSectionOne: React.FC<LandingPageProps> = ({leftImage, rightImage, leftOverlayColor, rightOverlayColor, leftTitle, rightTitle, leftSubtext, rightSubtext}) => {
 
@@ -10,7 +8,7 @@ const LandingSectionOne: React.FC<LandingPageProps> = ({leftImage, rightImage, l
     <div className="section-container">
       <div className="section1-leftcontainer">
         <img src={leftImage} className="background" />
-        <div className="section1-1-overlay">
+        <div className="section1-1-overlay" style ={{backgroundColor: leftOverlayColor}}>
           <div className='section-text-container'>
             <div className="section-title"> {leftTitle} </div>
             <div className="line" />
@@ -20,7 +18,7 @@ const LandingSectionOne: React.FC<LandingPageProps> = ({leftImage, rightImage, l
       </div> 
       <div className="section1-rightcontainer">
         <img src={rightImage} className="background" />
-        <div className="section1-2-overlay">
+        <div className="section1-2-overlay" style ={{backgroundColor: rightOverlayColor}}>
           <div className='section-text-container'>
             <div className="section-title"> {rightTitle} </div>
             <div className="line" />
