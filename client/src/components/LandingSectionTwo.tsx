@@ -17,7 +17,7 @@ const LandingSectionTwo: React.FC<LandingPageProps> = ({leftImage, rightImage, l
         </div>
       </div> 
       <div className="section1-leftcontainer">
-        <img src={rightImage} className="background" />
+        <img src={rightImage}className="background" />
         <div className="section2-2-overlay" style ={{backgroundColor: rightOverlayColor}}>
           <div className='section-text-container'>
             <div className="section-title"> {rightTitle}  </div>

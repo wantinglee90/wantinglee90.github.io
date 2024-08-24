@@ -8,27 +8,33 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
+  font-weight: 600;
   color: white;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
 }
 
 .header {
   color: #FFFFFF;
   background: var(--bg-color);
-  height: 172px;
+  height: 6.25em;
   position: relative;
 }
 
 .profile-container {
-  height: 306px;
-  width: 306px;
+  height: 18em;
+  width: 18em;
   border-radius: 50%; 
   overflow: hidden;   
   display: flex;         /* Centers the image inside the container */
   justify-content: center;
   align-items: center;
-  border: 3px solid var(--bg-color); 
+  border: 0.1875em solid var(--bg-color); 
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 4;
@@ -40,19 +46,18 @@ body {
   object-fit: cover;
 }
 
-.container {
+.bg-container {
   position: relative;
   width: 100%;
   height: 100vh; /* Full height of the viewport */
-  max-height: 875px;
+  max-height: 54.75em;
   overflow: hidden;
 }
 
 .background {
   width: 100%;
   height: 100%;
-  /* max-height: 875px;   */
-  height: 875px;
+  height: 54.75em;
   display: block;
   object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
   position: absolute;
@@ -68,7 +73,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 48px;
+  padding: 3em;
   z-index: 2;
   /* align-items: flex-start; */
 }
@@ -76,28 +81,26 @@ body {
 .text-container {
   display: inline-block;
   text-align: left;
-  margin: 0 48px 0 48px;
+  margin: 0 3em 0;
 }
 
 .title {
   font-size: 3.3em;
-  font-weight: 600;
   line-height: 1.65;
-  margin-bottom: 10px;
+  margin-bottom: 0.625em;
 }
 
 .line {
   display: inline-block; 
   width: 95%; 
-  height: 2px; 
+  height: 0.125em; 
   background-color: #FFFFFF;
-  margin-bottom: 10px;
+  margin-bottom: 0.625em;
 }
 
 .subtext {
-  margin-top: 20px;
+  margin-top: 1.25em;
   font-size: 1.2em;
-  font-weight: 500;
   letter-spacing: 0.25em;
   text-transform: uppercase;
 }
@@ -110,22 +113,22 @@ body {
 .section1-leftcontainer {
   position: relative;
   flex-grow: 875;
-  flex-basis: 864px;
+  flex-basis: 54em;
   max-width: 100%;
-  max-height: 450px;
+  max-height: 28.125em;
   height: 100vh;
   overflow: hidden;
 }
 
 .section1-rightcontainer {
   position: relative;
-  width: 576px;
+  width: 36em;
   max-width: 100%;
-  max-height: 450px;
+  max-height: 28.125em;
   height: 100vh;
   overflow: hidden;
   flex-grow: 576;
-  flex-basis: 576px;
+  flex-basis: 36em;
 }
 
 .section1-leftcontainer img, .section1-rightcontainer img {
@@ -134,11 +137,32 @@ body {
   object-fit: cover;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 90em) {
   .section1-leftcontainer,
   .section1-rightcontainer {
     flex-basis: 50%; 
     flex-grow: 1;
+  }
+  .tech-container {
+    height: 27.5em;
+    padding: 1.25em;
+  }
+  .icon-container {
+    justify-content: space-between; /* Adjust spacing to fill the line more evenly */
+  }
+  .icon {
+    flex-basis: 20%;
+  }
+
+}
+
+@media (max-width: 120em) {
+  .profile-container {
+    height: 13em;
+    width: 13em;
+  }
+  .container {
+    height: 32.5em
   }
 }
 
@@ -150,7 +174,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 48px;
+  padding: 3em;
   z-index: 2;
 }
 
@@ -163,22 +187,58 @@ body {
 
 .section-title {
   font-size: 1.9em;
-  font-weight: 600;
   line-height: 1.65;
-  margin-bottom: 5px;
+  margin-bottom: 0.3125em;
 }
 
 .section-subtext {
   font-size: 0.9em;
-  font-weight: 600;
   letter-spacing: 0.25em;
   margin: 0 0 2em 0;
   text-transform: uppercase;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+/* footer */
 .footer {
-  height: 400px;
+  height: 25em;
   width: 100%;
   background-color: var(--bg-color)
+}
+
+/* tech stack */
+.tech-container {
+  height: auto;
+  min-height: 12.5em;
+  width: 100%;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25em;
+}
+
+.tech-header {
+  font-size: 1.9em; 
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.icon-container {
+  justify-content: space-around;
+  display: flex;
+  width: 100%;
+  padding: 0.65em;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.icon {
+  width: 3em;
+  height: 3em;
+  object-fit: contain;
+  overflow: hidden;
+  padding: 0.3125em;
 }
