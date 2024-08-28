@@ -12,6 +12,11 @@ const LandingBanner: React.FC = () => {
           <div className="title"> Wan Ting Lee </div>
           <div className="line" />
           <div className="subtext"> Full Stack Engineer | New York, NY </div>
+          <div className="banner-icon-container">
+            <a href="mailto:wanting.lee90@gmail.com" target="_blank"><img src="https://www.svgrepo.com/show/353196/mail-with-circle.svg" className="banner-icon" /></a>
+            <a href="https://www.linkedin.com/in/leewanting/" target="_blank"><img src="https://static-00.iconduck.com/assets.00/linkedin-with-circle-icon-512x512-cvyrro5n.png" className="banner-icon" /></a>
+            <a href="https://github.com/wantinglee90" target="_blank"><img src="https://cdn-icons-png.flaticon.com/256/25/25231.png" className="banner-icon" /></a>
+          </div>
         </div>
        </div>
     </div> 
