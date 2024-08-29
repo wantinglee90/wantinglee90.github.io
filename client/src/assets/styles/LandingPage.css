@@ -98,12 +98,14 @@ body {
   transition: all 0.3s ease; /* Smooth transition for hover effects */
   cursor: pointer; /* Indicates an interactive element */
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+  padding: 0.375em;
   /* overflow: hidden */
 }
 
 .banner-icon:hover {
   transform: scale(1.1); /* Slightly increase the icon size */
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.75); /* Brighter and larger shadow */
+  /* box-shadow: 0 0 15px rgba(255, 255, 255, 0.75);  */
+  box-shadow: 0 0 20px rgba(255, 165, 0, 0.75);
   background-color: rgba(255, 255, 255, 0.2); /* Light background highlight*/
 }
 
@@ -137,6 +139,7 @@ body {
 .section-container {
   display: flex;
   width: 100%;
+  position: relative;
 }
 
 .section1-leftcontainer {
@@ -160,7 +163,38 @@ body {
   flex-basis: 36em;
 }
 
-.section1-leftcontainer img, .section1-rightcontainer img {
+.screenshot {
+  width: 100%;
+  /* height: 100%; */
+  height: 85%;
+  background-color: var(--bg-color);
+  display: block;
+  object-fit: contain;
+  /* z-index: 1;  */
+}
+
+.techlist {
+  width: 100%; /* Full width to align with the image */
+  height: 15%;
+  display: flex; /* Flex layout for the technologies */
+  flex-wrap: wrap; /* Allow items to wrap */
+  align-items: center;
+  justify-content: center; 
+  background-color: var(--bg-color)
+}
+
+.technology {
+  font-weight: 300;
+  font-size: 0.75em;
+  color: white;
+  border: 0.2em solid orange;
+  margin: 0.5em; 
+  padding: 0.4em;
+  display: inline-block;
+  text-align: center; 
+}
+
+.section1-leftcontainer img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -212,12 +246,12 @@ body {
   justify-content: center;
   padding: 3em;
   z-index: 2;
+  box-sizing: border-box; 
 }
 
 .section-text-container {
   display: block;
   text-align: left;
-  margin: 4em 4em 4em 0em;
   padding: 0 1em 0 0.2em;
 }
 
@@ -246,7 +280,7 @@ body {
 .tech-container {
   height: auto;
   min-height: 12.5em;
-  width: 100%;
+  width: calc(100% - 2em);
   background-color: var(--bg-color);
   display: flex;
   flex-direction: column;
