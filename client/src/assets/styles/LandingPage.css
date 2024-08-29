@@ -32,7 +32,8 @@ body {
   display: flex;         /* Centers the image inside the container */
   justify-content: center;
   align-items: center;
-  border: 0.1875em solid var(--bg-color); 
+  /* border: 0.1875em solid var(--bg-color);  */
+  border: 0.5em solid var(--bg-color);
   position: absolute;
   top: 15%;
   left: 50%;
@@ -140,6 +141,8 @@ body {
   display: flex;
   width: 100%;
   position: relative;
+  /* border-top: 0.3em solid var(--bg-color);
+  border-bottom: 0.3em solid var(--bg-color); */
 }
 
 .section1-leftcontainer {
@@ -147,7 +150,8 @@ body {
   flex-grow: 875;
   flex-basis: 54em;
   max-width: 100%;
-  max-height: 28.125em;
+  /* max-height: 28.125em; */
+  max-height: 30em;
   height: 100vh;
   overflow: hidden;
 }
@@ -156,7 +160,8 @@ body {
   position: relative;
   width: 36em;
   max-width: 100%;
-  max-height: 28.125em;
+  /* max-height: 28.125em; */
+  max-height: 30em;
   height: 100vh;
   overflow: hidden;
   flex-grow: 576;
@@ -166,16 +171,16 @@ body {
 .screenshot {
   width: 100%;
   /* height: 100%; */
-  height: 85%;
+  height: 80%;
   background-color: var(--bg-color);
   display: block;
-  object-fit: contain;
+  object-fit: fill;
   /* z-index: 1;  */
 }
 
 .techlist {
   width: 100%; /* Full width to align with the image */
-  height: 15%;
+  height: 20%;
   display: flex; /* Flex layout for the technologies */
   flex-wrap: wrap; /* Allow items to wrap */
   align-items: center;
@@ -189,7 +194,7 @@ body {
   color: white;
   border: 0.2em solid orange;
   margin: 0.5em; 
-  padding: 0.4em;
+  padding: 0.275em;
   display: inline-block;
   text-align: center; 
 }
@@ -271,7 +276,7 @@ body {
 
 /* footer */
 .footer {
-  height: 25em;
+  height: 8em;
   width: 100%;
   background-color: var(--bg-color)
 }
@@ -287,6 +292,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 1em;
+  /* border-bottom: 0.3em solid var(--bg-color); */
 }
 
 .tech-header {
