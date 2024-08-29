@@ -13,6 +13,8 @@ import testsudo from '../assets/images/Testsudo.png';
 
 const LandingPage: React.FC = () => {
 
+  const testsudoTech = ['NodeJS', 'ExpressJS', 'React', 'HTML/CSS', 'PostgreSQL', 'MongoDB', 'Docker', 'AWS', 'recharts'];
+
   return (
     <div className="container">
       <LandingBanner />
@@ -26,6 +28,7 @@ const LandingPage: React.FC = () => {
         leftSubtext='An open source observability tool to test frontend, backend and security performance'
         rightTitle=''
         rightSubtext=''
+        technology={testsudoTech}
       />
         <LandingSectionTwo
         leftImage=''
@@ -36,6 +39,7 @@ const LandingPage: React.FC = () => {
         leftSubtext=''
         rightTitle='Occasio'
         rightSubtext='An AI-powered event planning tool'
+        technology={testsudoTech}
        />
       {/* <LandingSectionOne 
         leftImage='https://images.unsplash.com/photo-1421435371524-d26441ec7dda?q=80&w=2952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
@@ -66,6 +70,7 @@ const LandingPage: React.FC = () => {
         leftSubtext='An open source tax liabilities estimator'
         rightTitle=''
         rightSubtext=''
+        technology={testsudoTech}
       />
       <div className="footer" />
     </div> 

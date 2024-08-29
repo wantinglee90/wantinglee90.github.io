@@ -2,19 +2,24 @@ import React from 'react';
 import '../assets/styles/LandingPage.css';
 import { LandingPageProps } from '../types/LandingPage.types';
 
-const LandingSectionTwo: React.FC<LandingPageProps> = ({leftImage, rightImage, leftOverlayColor, rightOverlayColor, leftTitle, rightTitle, leftSubtext, rightSubtext}) => {
+const LandingSectionTwo: React.FC<LandingPageProps> = ({leftImage, rightImage, leftOverlayColor, rightOverlayColor, leftTitle, rightTitle, leftSubtext, rightSubtext, technology}) => {
 
   return (
     <div className="section-container">
       <div className="section1-rightcontainer">
-        <img src={leftImage} className="background" />
-        <div className="section2-1-overlay" style ={{backgroundColor: leftOverlayColor}}>
+        <img src={leftImage} className="screenshot" />
+        <div className="techlist">
+          {technology.map((tech) => (
+            <div className="technology">{tech}</div>
+          ))}
+        </div>
+        {/* <div className="section2-1-overlay" style ={{backgroundColor: leftOverlayColor}}>
           <div className='section-text-container'>
             <div className="section-title"> {leftTitle} </div>
             <div className="line" />
             <div className="section-subtext"> {leftSubtext}  </div>
           </div>
-        </div>
+        </div> */}
       </div> 
       <div className="section1-leftcontainer">
         <img src={rightImage}className="background" />
