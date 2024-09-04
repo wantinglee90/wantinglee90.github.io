@@ -33,6 +33,7 @@ const LandingPage: React.FC = () => {
         rightTitle=''
         rightSubtext=''
         technology={testsudoTech}
+        url='https://github.com/oslabs-beta/testsudo'
       />
         <LandingSectionTwo
         leftImage={occasio}
@@ -44,6 +45,7 @@ const LandingPage: React.FC = () => {
         rightTitle='Occasio'
         rightSubtext='An AI-powered event planning tool'
         technology={occasioTech}
+        url='https://github.com/reinforced-eevee/occasio'
        />
       <LandingSectionOne 
         leftImage='https://images.unsplash.com/photo-1514575111941-6ce0097e6dfd?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
@@ -55,6 +57,7 @@ const LandingPage: React.FC = () => {
         rightTitle=''
         rightSubtext=''
         technology={taxfolioTech}
+        url='https://github.com/Teen-Titans-White-Tee/TaxFolio'
       />
         <LandingSectionTwo
         leftImage={voyager}
@@ -66,6 +69,7 @@ const LandingPage: React.FC = () => {
         rightTitle='Voyager'
         rightSubtext='A collaboration tool for content creators'
         technology={voyagerTech}
+        url='https://github.com/Scratch-Yeti-Crab/voyage'
        />
        {/* <LandingSectionOne 
         leftImage='https://images.unsplash.com/photo-1468476396571-4d6f2a427ee7?q=80&w=2779&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'

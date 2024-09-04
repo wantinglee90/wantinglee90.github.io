@@ -8,4 +8,5 @@ export interface LandingPageProps {
   leftSubtext: string;
   rightSubtext: string;
   technology: string[];
+  url: string;
 }

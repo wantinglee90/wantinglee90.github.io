@@ -2,7 +2,7 @@ import React from 'react';
 import { LandingPageProps } from '../types/LandingPage.types';
 import '../assets/styles/LandingPage.css';
 
-const LandingSectionOne: React.FC<LandingPageProps> = ({leftImage, rightImage, leftOverlayColor, rightOverlayColor, leftTitle, rightTitle, leftSubtext, rightSubtext, technology}) => {
+const LandingSectionOne: React.FC<LandingPageProps> = ({leftImage, rightImage, leftOverlayColor, rightOverlayColor, leftTitle, rightTitle, leftSubtext, rightSubtext, technology, url}) => {
 
   return (
     <div className="section-container">
@@ -17,12 +17,12 @@ const LandingSectionOne: React.FC<LandingPageProps> = ({leftImage, rightImage, l
         </div>
       </div> 
       <div className="section1-rightcontainer">
-        <img src={rightImage} className="screenshot" />
-        <div className="techlist">
-          {technology.map((tech) => (
-            <div className="technology">{tech}</div>
-          ))}
-        </div>
+        <a href={url} target="_blank"><img src={rightImage} className="screenshot" /></a>
+          <div className="techlist">
+            {technology.map((tech) => (
+              <div className="technology">{tech}</div>
+            ))}
+          </div>
         {/* <div className="section1-2-overlay" style ={{backgroundColor: rightOverlayColor}}>
           <div className='section-text-container'>
             <div className="section-title"> {rightTitle} </div>

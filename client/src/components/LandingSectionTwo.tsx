@@ -2,12 +2,12 @@ import React from 'react';
 import '../assets/styles/LandingPage.css';
 import { LandingPageProps } from '../types/LandingPage.types';
 
-const LandingSectionTwo: React.FC<LandingPageProps> = ({leftImage, rightImage, leftOverlayColor, rightOverlayColor, leftTitle, rightTitle, leftSubtext, rightSubtext, technology}) => {
+const LandingSectionTwo: React.FC<LandingPageProps> = ({leftImage, rightImage, leftOverlayColor, rightOverlayColor, leftTitle, rightTitle, leftSubtext, rightSubtext, technology, url}) => {
 
   return (
     <div className="section-container">
       <div className="section1-rightcontainer">
-        <img src={leftImage} className="screenshot" />
+        <a href={url} target="_blank"><img src={leftImage} className="screenshot" /></a>
         <div className="techlist">
           {technology.map((tech) => (
             <div className="technology">{tech}</div>
